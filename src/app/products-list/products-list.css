@@ -1,0 +1,94 @@
+:host {
+  display: block;
+  padding: 2rem;
+  background-color: #f4f4f4; /* soft background */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #222;
+}
+
+.product-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  transition: box-shadow 0.3s ease;
+  position: relative;
+}
+
+.product-item:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.product-item h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #1a237e;
+}
+
+.product-item p {
+  margin: 0.25rem 0;
+  line-height: 1.4;
+}
+
+.price {
+  color: #2e7d32;
+  font-weight: bold;
+}
+
+.availability {
+  color: #d32f2f;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+/* Special offer styling */
+.special-offer {
+  background-color: #ffecf1;
+  border-left: 4px solid #e91e63;
+  padding: 0.5rem;
+  margin-top: 0.75rem;
+  color: #e91e63;
+  font-weight: bold;
+  font-size: 0.95rem;
+  border-radius: 4px;
+}
+
+/* On Sale styling */
+.on-sale {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: #ff9800;
+  color: white;
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 0.25rem 0.6rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
+
+/* Button styling */
+button {
+  margin-top: 1rem;
+  padding: 0.5rem 1.25rem;
+  background-color: #1976d2;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+button:hover {
+  background-color: #1565c0;
+}

@@ -1,1 +1,18 @@
-<p>products-list works!</p>
+<h2>{{title}}</h2>
+
+@for(product of products; track product) {
+  <div class="product-item">
+    <h3>{{product.title}}</h3>
+    <p>{{product.description}}</p>
+    <p>{{product.price | currency:'USD'}}</p>
+    <p>{{product.date | date:'longDate'}}</p>
+    <p [hidden]="!product.availability">Temporarily unavailable</p>
+    @if (product.price < 200) {
+      <div class="special-offer">Special Offer!</div>
+    }
+    @if (product.onSale) {
+      <div class="on-sale">On Sale!</div>
+    }
+    <button (click)="viewDetails()">View details</button>
+  </div>
+}
